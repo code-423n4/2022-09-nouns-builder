@@ -54,6 +54,6 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 - Submit findings [using the C4 form](https://code4rena.com/contests/2022-09-zora/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 - Starts September 02, 2022 20:00 UTC
-- Ends September September 11, 2022 20:00 UTC
+- Ends September 11, 2022 20:00 UTC
 
 [ ⭐️ SPONSORS ADD INFO HERE ]
