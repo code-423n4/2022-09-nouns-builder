@@ -47,7 +47,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# Zora contest details
+# Nouns Builder contest details
 - $85,500 USDC main award pot
 - $4,500 USDC gas optimization award pot
 - Join [C4 Discord](https://discord.gg/code4rena) to register
