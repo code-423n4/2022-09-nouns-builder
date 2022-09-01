@@ -2,7 +2,6 @@
 pragma solidity 0.8.16;
 
 import { UUPS } from "../lib/proxy/UUPS.sol";
-import { Ownable } from "../lib/utils/Ownable.sol";
 import { ReentrancyGuard } from "../lib/utils/ReentrancyGuard.sol";
 import { ERC721Votes } from "../lib/token/ERC721Votes.sol";
 import { ERC721 } from "../lib/token/ERC721.sol";
@@ -71,42 +70,58 @@ contract Token is IToken, UUPS, ReentrancyGuard, ERC721Votes, TokenStorageV1 {
     /// @dev Called upon initialization to add founders and their vesting schedules
     /// @param _founders The list of DAO founders
     function _addFounders(IManager.FounderParams[] calldata _founders) internal {
+        // Cache the number of founders
         uint256 numFounders = _founders.length;
 
+        // Used to store the total percent ownership among the founders
         uint256 totalOwnership;
 
         unchecked {
+            // For each founder:
             for (uint256 i; i < numFounders; ++i) {
+                // Cache the percent ownership
                 uint256 founderPct = _founders[i].ownershipPct;
 
+                // Continue if no ownership is specified
                 if (founderPct == 0) continue;
 
+                // Update the total ownership and ensure it's valid
                 if ((totalOwnership += uint8(founderPct)) > 100) revert INVALID_FOUNDER_OWNERSHIP();
 
+                // Get the founder's id
                 uint256 founderId = settings.numFounders++;
 
+                // Get the pointer to store the founder
                 Founder storage newFounder = founder[founderId];
 
+                // Store the founder's vesting details
                 newFounder.wallet = _founders[i].wallet;
-                newFounder.vestingEnd = uint32(_founders[i].vestExpiry);
-                newFounder.percentage = uint8(founderPct);
+                newFounder.vestExpiry = uint32(_founders[i].vestExpiry);
+                newFounder.ownershipPct = uint8(founderPct);
 
-                uint256 mod = 100 / founderPct;
+                // Compute the vesting schedule
+                uint256 schedule = 100 / founderPct;
 
-                uint256 tokenId;
+                // Used to store the base token id the founder will recieve
+                uint256 baseTokenId;
 
+                // For each token to vest:
                 for (uint256 j; j < founderPct; ++j) {
-                    tokenId = _getNextTokenId(tokenId);
+                    // Get the available token id
+                    baseTokenId = _getNextTokenId(baseTokenId);
 
-                    tokenRecipient[tokenId] = newFounder;
+                    // Store the founder as the recipient
+                    tokenRecipient[baseTokenId] = newFounder;
 
-                    emit MintScheduled(tokenId, founderId, newFounder);
+                    emit MintScheduled(baseTokenId, founderId, newFounder);
 
-                    (tokenId += mod) % 100;
+                    // Update the base token id
+                    (baseTokenId += schedule) % 100;
                 }
             }
 
-            settings.totalPercentage = uint8(totalOwnership);
+            // Store the founders details
+            settings.totalOwnership = uint8(totalOwnership);
             settings.numFounders = uint8(numFounders);
         }
     }
@@ -115,7 +130,7 @@ contract Token is IToken, UUPS, ReentrancyGuard, ERC721Votes, TokenStorageV1 {
     /// @param _tokenId The ERC-721 token id
     function _getNextTokenId(uint256 _tokenId) internal view returns (uint256) {
         unchecked {
-            while (tokenRecipient[_tokenId % 100].wallet != address(0)) ++_tokenId;
+            while (tokenRecipient[_tokenId].wallet != address(0)) ++_tokenId;
 
             return _tokenId;
         }
@@ -161,7 +176,7 @@ contract Token is IToken, UUPS, ReentrancyGuard, ERC721Votes, TokenStorageV1 {
     /// @dev Checks if a given token is for a founder and mints accordingly
     /// @param _tokenId The ERC-721 token id
     function _isForFounder(uint256 _tokenId) private returns (bool) {
-        //
+        // Get the base token id
         uint256 baseTokenId = _tokenId % 100;
 
         // If there is no scheduled recipient:
@@ -169,7 +184,7 @@ contract Token is IToken, UUPS, ReentrancyGuard, ERC721Votes, TokenStorageV1 {
             return false;
 
             // Else if the founder is still vesting:
-        } else if (block.timestamp < tokenRecipient[baseTokenId].vestingEnd) {
+        } else if (block.timestamp < tokenRecipient[baseTokenId].vestExpiry) {
             // Mint the token to the founder
             _mint(tokenRecipient[baseTokenId].wallet, _tokenId);
 
@@ -224,7 +239,7 @@ contract Token is IToken, UUPS, ReentrancyGuard, ERC721Votes, TokenStorageV1 {
 
     /// @notice The founders total percent ownership
     function totalFounderOwnership() external view returns (uint256) {
-        return settings.totalPercentage;
+        return settings.totalOwnership;
     }
 
     /// @notice The vesting details of a founder
