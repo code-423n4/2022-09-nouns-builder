@@ -102,3 +102,13 @@ dist
 
 # TernJS port file
 .tern-port
+
+build/
+cache
+out
+dist
+.env
+.DS_Store
+.vscode/
+broadcast/
+anvil
