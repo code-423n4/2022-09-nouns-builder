@@ -151,7 +151,7 @@ contract Auction is IAuction, UUPS, Ownable, ReentrancyGuard, Pausable, AuctionS
     }
 
     ///                                                          ///
-    ///                     SETTLE & CREATE AUCTION              ///
+    ///                    SETTLE & CREATE AUCTION               ///
     ///                                                          ///
 
     /// @notice Settles the current auction and creates the next one
