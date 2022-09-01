@@ -1,0 +1,44 @@
+{
+  "name": "2022-09-nouns-builder",
+  "version": "0.1.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-423n4/2022-09-nouns-builder"
+  },
+  "files": [
+    "dist/**/*",
+    "dist/*"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
+    "@types/node": "^18.7.14",
+    "sol-uriencode": "^0.1.0",
+    "sol2string": "https://github.com/mzhu25/sol2string.git#13f566f7dc61c820c24a673da72d0114183a17c8"
+  },
+  "devDependencies": {
+    "@typechain/ethers-v5": "^10.1.0",
+    "ethers": "^5.7.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-dev.23",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5",
+    "typechain": "^8.1.0",
+    "typescript": "^4.8.2"
+  },
+  "lint-staged": {
+    "*.{ts,js,css,md,sol}": "prettier --write",
+    "*.sol": "solhint"
+  },
+  "scripts": {
+    "build": "forge build && rm -rf ./dist/artifacts/*/*.metadata.json && yarn typechain && tsc",
+    "clean": "forge clean && rm -rf ./dist",
+    "prepublishOnly": "rm -rf ./dist && forge clean && mkdir -p ./dist/artifacts && yarn build && cp -R src dist && cp -R addresses dist",
+    "test": "forge test",
+    "typechain": "typechain --target=ethers-v5 'dist/artifacts/*/*.json' --out-dir dist/typechain"
+  }
+}
