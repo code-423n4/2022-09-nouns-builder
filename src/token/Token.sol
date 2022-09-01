@@ -2,7 +2,6 @@
 pragma solidity 0.8.16;
 
 import { UUPS } from "../lib/proxy/UUPS.sol";
-import { Ownable } from "../lib/utils/Ownable.sol";
 import { ReentrancyGuard } from "../lib/utils/ReentrancyGuard.sol";
 import { ERC721Votes } from "../lib/token/ERC721Votes.sol";
 import { ERC721 } from "../lib/token/ERC721.sol";
