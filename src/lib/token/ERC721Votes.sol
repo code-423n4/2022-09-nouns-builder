@@ -7,7 +7,7 @@ import { EIP712 } from "../utils/EIP712.sol";
 
 /// @title ERC721Votes
 /// @author Rohan Kulkarni
-/// @notice Modified from OpenZeppelin Contracts v4.7.3 (token/ERC721/extensions/draft-ERC721Votes.sol)
+/// @notice Modified from OpenZeppelin Contracts v4.7.3 (token/ERC721/extensions/draft-ERC721Votes.sol) & Nouns DAO ERC721Checkpointable.sol commit 2cbe6c7 - licensed under the BSD-3-Clause license.
 /// - Uses custom errors defined in IERC721Votes
 /// - Checkpoints are based on timestamps instead of block numbers
 /// - Tokens are self-delegated by default

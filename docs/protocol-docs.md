@@ -10,11 +10,7 @@ Documentation for interacting with the Nouns Builder Protocol.
 
 ## Architecture
 
-**Protocol**
 ![protocol](../assets/protocol.png)
-
-**DAO**
-![DAO](../assets/DAO.png)
 
 ## Custom Settings
 

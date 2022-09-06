@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.15;
 
 import { IUUPS } from "../lib/interfaces/IUUPS.sol";
 import { IOwnable } from "../lib/interfaces/IOwnable.sol";
@@ -52,7 +52,7 @@ interface IManager is IUUPS, IOwnable {
     }
 
     /// @notice The ERC-721 token parameters
-    /// @param initStrings The encoded token name, symbol, description, contract image, renderer base
+    /// @param initStrings The encoded token name, symbol, collection description, collection image uri, renderer base uri
     struct TokenParams {
         bytes initStrings;
     }
@@ -66,11 +66,11 @@ interface IManager is IUUPS, IOwnable {
     }
 
     /// @notice The governance parameters
-    /// @param timelockDelay The amount of time a queued proposal is delayed until execution
-    /// @param votingDelay The amount of time after a submitted proposal until voting begins
-    /// @param votingPeriod The amount of time voting takes place for an active proposal
-    /// @param proposalThresholdBps The minimum votes (in basis points of the total supply) required to submit a proposal
-    /// @param quorumThresholdBps The minimum votes (in basis points of total supply) required to reach quorum
+    /// @param timelockDelay The time delay to execute a queued transaction
+    /// @param votingDelay The time delay to vote on a created proposal
+    /// @param votingPeriod The time period to vote on a proposal
+    /// @param proposalThresholdBps The basis points of the token supply required to create a proposal
+    /// @param quorumThresholdBps The basis points of the token supply required to reach quorum
     struct GovParams {
         uint256 timelockDelay;
         uint256 votingDelay;

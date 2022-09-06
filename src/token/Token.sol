@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.15;
 
 import { UUPS } from "../lib/proxy/UUPS.sol";
 import { ReentrancyGuard } from "../lib/utils/ReentrancyGuard.sol";
@@ -26,8 +26,7 @@ contract Token is IToken, UUPS, ReentrancyGuard, ERC721Votes, TokenStorageV1 {
     ///                         CONSTRUCTOR                      ///
     ///                                                          ///
 
-    /// @notice
-    /// @param _manager The address of the contract upgrade manager
+    /// @param _manager The contract upgrade manager address
     constructor(address _manager) payable initializer {
         manager = IManager(_manager);
     }
@@ -53,7 +52,7 @@ contract Token is IToken, UUPS, ReentrancyGuard, ERC721Votes, TokenStorageV1 {
         // Initialize the reentrancy guard
         __ReentrancyGuard_init();
 
-        // Store the founders and their allocations
+        // Store the founders and compute their allocations
         _addFounders(_founders);
 
         // Decode the token name and symbol
@@ -67,7 +66,7 @@ contract Token is IToken, UUPS, ReentrancyGuard, ERC721Votes, TokenStorageV1 {
         settings.auction = _auction;
     }
 
-    /// @dev Called upon initialization to add founders and their vesting schedules
+    /// @dev Called upon initialization to add founders and compute their vesting allocations
     /// @param _founders The list of DAO founders
     function _addFounders(IManager.FounderParams[] calldata _founders) internal {
         // Cache the number of founders
@@ -88,7 +87,7 @@ contract Token is IToken, UUPS, ReentrancyGuard, ERC721Votes, TokenStorageV1 {
                 // Update the total ownership and ensure it's valid
                 if ((totalOwnership += uint8(founderPct)) > 100) revert INVALID_FOUNDER_OWNERSHIP();
 
-                // Get the founder's id
+                // Compute the founder's id
                 uint256 founderId = settings.numFounders++;
 
                 // Get the pointer to store the founder
@@ -120,7 +119,7 @@ contract Token is IToken, UUPS, ReentrancyGuard, ERC721Votes, TokenStorageV1 {
                 }
             }
 
-            // Store the founders details
+            // Store the founders' details
             settings.totalOwnership = uint8(totalOwnership);
             settings.numFounders = uint8(numFounders);
         }
