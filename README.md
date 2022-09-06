@@ -10,9 +10,11 @@
 
 # Overview
 
-Nouns DAO is a significant form factor innovation for NFTs and DAOs. Instead of giving all power and capital solely to a project’s founders, the Nouns model enables communities to emerge progressively, and to be active participants in how their brand and community evolves.
+Nouns DAO is a significant form factor innovation for NFTs and DAOs. Instead of giving all power and capital solely to a project’s founders, the Nouns model enables communities to emerge progressively and be active participants in how their brand and community evolves.
 
-Nouns Builder is a permissionless, governed protocol enabling anyone to create their own Nouns DAO with any art, auction, and governance cadence; with flexibility to evolve over time.
+Nouns Builder is a tool for deploying forks of Nouns DAO with custom NFT, auction, governance, and founder(s) settings.
+
+See the [documentation](./docs/protocol-docs.md) for more information on the protocol.
 
 # Scope
 
@@ -20,11 +22,11 @@ This contest is open for 9 days to give wardens time to understand the protocol 
 
 The focus of the contest is to try and find any logic errors or ways to drain funds from a DAO in a way that is advantageous for an attacker at the expense of users with funds invested in the protocol. Wardens should assume that governance variables are set sensibly (unless they can find a way to change the value of a governance variable, and not counting social engineering approaches for this).
 
-All contracts `src` are to be reviewed. Any other contracts are to be ignored for this contest.
+All contracts under `src` are to be reviewed. Any other contracts are to be ignored for this contest.
 
 ```ml
 manager
-├─ Manager — "DAO deployer and registry for implementation upgrades"
+├─ Manager — "DAO deployer and upgrade registry"
 ├─ IManager — "Interface for Manager contract"
 ├─ storage
 │  ├─ ManagerStorageV1 — "Storage for Manager contract"
@@ -94,7 +96,7 @@ Run Tests:
 forge test
 ```
 
-Modifiers:
+Run Tests with Modifiers:
 
 - (-vv): Logs emitted during tests are also displayed.
 - (-vvv): Stack traces for failing tests are also displayed.
