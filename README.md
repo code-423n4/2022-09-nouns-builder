@@ -14,7 +14,7 @@ Nouns DAO is a significant form factor innovation for NFTs and DAOs. Instead of 
 
 Nouns Builder is a tool for deploying forks of Nouns DAO with custom NFT, auction, governance, and founder(s) settings.
 
-See the [documentation](./docs/protocol-docs.md) for more information on the protocol.
+See the [documentation](https://github.com/code-423n4/2022-09-nouns-builder/blob/main/docs/protocol-docs.md) for more information on the protocol.
 
 # Scope
 
