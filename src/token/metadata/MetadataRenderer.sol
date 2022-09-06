@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.15;
 
 import { Base64 } from "@openzeppelin/contracts/utils/Base64.sol";
 import { Strings } from "@openzeppelin/contracts/utils/Strings.sol";
@@ -15,7 +15,7 @@ import { IManager } from "../../manager/IManager.sol";
 
 /// @title Metadata Renderer
 /// @author Iain Nash & Rohan Kulkarni
-/// @notice A DAO's token metadata renderer
+/// @notice A DAO's artwork generator and renderer
 contract MetadataRenderer is IPropertyIPFSMetadataRenderer, UUPS, Ownable, MetadataRendererStorageV1 {
     ///                                                          ///
     ///                          IMMUTABLES                      ///
@@ -28,7 +28,7 @@ contract MetadataRenderer is IPropertyIPFSMetadataRenderer, UUPS, Ownable, Metad
     ///                          CONSTRUCTOR                     ///
     ///                                                          ///
 
-    /// @param _manager The address of the contract upgrade manager
+    /// @param _manager The contract upgrade manager address
     constructor(address _manager) payable initializer {
         manager = IManager(_manager);
     }
@@ -135,12 +135,12 @@ contract MetadataRenderer is IPropertyIPFSMetadataRenderer, UUPS, Ownable, Metad
                 uint256 _propertyId = _items[i].propertyId;
 
                 // Offset the id if the item is for a new property
+                // Note: Property ids under the hood are offset by 1
                 if (_items[i].isNewProperty) {
                     _propertyId += numStoredProperties;
                 }
 
                 // Get the pointer to the other items for the property
-                // Note: Property ids under the hood are offset by 1
                 Item[] storage items = properties[_propertyId].items;
 
                 // Append storage space
@@ -227,7 +227,7 @@ contract MetadataRenderer is IPropertyIPFSMetadataRenderer, UUPS, Ownable, Metad
 
             // For each of the token's properties:
             for (uint256 i = 0; i < numProperties; ++i) {
-                // Get whether the current property is the last
+                // Check if this is the last property
                 bool isLast = i == lastProperty;
 
                 // Get a copy of the property
@@ -239,6 +239,7 @@ contract MetadataRenderer is IPropertyIPFSMetadataRenderer, UUPS, Ownable, Metad
                 // Get the associated item data
                 Item memory item = property.items[attribute];
 
+                // Store the encoded attributes and query string
                 aryAttributes = abi.encodePacked(aryAttributes, '"', property.name, '": "', item.name, '"', isLast ? "" : ",");
                 queryString = abi.encodePacked(queryString, "&images=", _getItemImage(item, property.name));
             }
@@ -250,7 +251,7 @@ contract MetadataRenderer is IPropertyIPFSMetadataRenderer, UUPS, Ownable, Metad
         return uint256(keccak256(abi.encode(_tokenId, blockhash(block.number), block.coinbase, block.timestamp)));
     }
 
-    /// @dev Encodes the string of a property item
+    /// @dev Encodes the reference URI of an item
     function _getItemImage(Item memory _item, string memory _propertyName) private view returns (string memory) {
         return
             UriEncode.uriEncode(
@@ -303,7 +304,7 @@ contract MetadataRenderer is IPropertyIPFSMetadataRenderer, UUPS, Ownable, Metad
             );
     }
 
-    /// @dev Converts JSON bytes to Bytes64
+    /// @dev Encodes data to JSON
     function _encodeAsJson(bytes memory _jsonBlob) private pure returns (string memory) {
         return string(abi.encodePacked("data:application/json;base64,", Base64.encode(_jsonBlob)));
     }

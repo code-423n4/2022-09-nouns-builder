@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.16;
+pragma solidity 0.8.15;
 
 import { UUPS } from "../lib/proxy/UUPS.sol";
 import { Ownable } from "../lib/utils/Ownable.sol";
@@ -16,6 +16,9 @@ import { IWETH } from "../lib/interfaces/IWETH.sol";
 /// @title Auction
 /// @author Rohan Kulkarni
 /// @notice A DAO's auction house
+/// Modified from:
+/// - NounsAuctionHouse.sol commit 2cbe6c7 - licensed under the BSD-3-Clause license.
+/// - Zora V3 ReserveAuctionCoreEth module commit 795aeca - licensed under the GPL-3.0 license.
 contract Auction is IAuction, UUPS, Ownable, ReentrancyGuard, Pausable, AuctionStorageV1 {
     ///                                                          ///
     ///                          IMMUTABLES                      ///
@@ -31,7 +34,7 @@ contract Auction is IAuction, UUPS, Ownable, ReentrancyGuard, Pausable, AuctionS
     ///                          CONSTRUCTOR                     ///
     ///                                                          ///
 
-    /// @param _manager The address of the contract upgrade manager
+    /// @param _manager The contract upgrade manager address
     /// @param _weth The address of WETH
     constructor(address _manager, address _weth) payable initializer {
         manager = IManager(_manager);
@@ -61,13 +64,13 @@ contract Auction is IAuction, UUPS, Ownable, ReentrancyGuard, Pausable, AuctionS
         // Initialize the reentrancy guard
         __ReentrancyGuard_init();
 
-        // Grant initial ownership to a founder to unpause the auction house when ready
+        // Grant initial ownership to a founder
         __Ownable_init(_founder);
 
-        // Pause the contract until the first auction is ready to begin
+        // Pause the contract until the first auction
         __Pausable_init(true);
 
-        // Store the address of the ERC-721 token that will be bid on
+        // Store DAO's ERC-721 token
         token = Token(_token);
 
         // Store the auction house settings
@@ -94,7 +97,7 @@ contract Auction is IAuction, UUPS, Ownable, ReentrancyGuard, Pausable, AuctionS
         // Ensure the auction is still active
         if (block.timestamp >= _auction.endTime) revert AUCTION_OVER();
 
-        // Cache the address of the current highest bidder
+        // Cache the address of the highest bidder
         address highestBidder = _auction.highestBidder;
 
         // If this is the first bid:
@@ -104,10 +107,10 @@ contract Auction is IAuction, UUPS, Ownable, ReentrancyGuard, Pausable, AuctionS
 
             // Else this is a subsequent bid:
         } else {
-            // Cache the current highest bid
+            // Cache the highest bid
             uint256 highestBid = _auction.highestBid;
 
-            // Used to store the minimum amount required to beat the current bid
+            // Used to store the minimum bid required
             uint256 minBid;
 
             // Cannot realistically overflow
@@ -123,10 +126,10 @@ contract Auction is IAuction, UUPS, Ownable, ReentrancyGuard, Pausable, AuctionS
             _handleOutgoingTransfer(highestBidder, highestBid);
         }
 
-        // Store the incoming bid as the new highest bid
+        // Store the new highest bid
         auction.highestBid = msg.value;
 
-        // Store the caller as the new highest bidder
+        // Store the new highest bidder
         auction.highestBidder = msg.sender;
 
         // Used to store if the auction will be extended
