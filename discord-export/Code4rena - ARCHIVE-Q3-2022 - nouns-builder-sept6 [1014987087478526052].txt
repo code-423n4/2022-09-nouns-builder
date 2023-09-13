@@ -1,0 +1,982 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q3-2022 / nouns-builder-sept6
+==============================================================
+
+[09/01/2022 8:03 PM] haruxe
+👀
+
+{Reactions}
+👀 (16) 
+
+[09/01/2022 8:07 PM] codingnamekiki
+:goose:
+
+{Reactions}
+psyduck (4) 
+
+[09/01/2022 8:13 PM] ch_301
+⏳
+
+{Reactions}
+⏳ (4) 
+
+[09/01/2022 8:18 PM] kartoonjoy (pinned)
+👋 Hello and welcome to the contest channel for the $90K USDC **Nouns Builder** contest!
+
+📆 Contest opens 09/06/2022 8:00 PM (20:00 UTC) and runs through 09/15/2022 8:00 PM (20:00 UTC) (9 days).
+
+Please give a warm welcome to the Zora team, particularly @rohan, @tbtstl and @iain, who will be available for questions either here in the channel or via DM.
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+Contest Page: https://code4rena.com/contests/2022-09-nouns-builder-contest
+
+{Embed}
+https://code4rena.com/contests/2022-09-nouns-builder-contest
+Code4rena Nouns Builder contest
+$90,000 USDC
+6 September 2022—15 September 2022
+Code4rena - ARCHIVE-Q3-2022 - nouns-builder-sept6 [1014987087478526052].txt_Files/C4-banner-7C19B.png
+
+{Reactions}
+🚀 (4) C4Keycap 🇿 (2) 🇴 (2) 🇷 (2) 🇦 (2) 
+
+[09/01/2022 8:20 PM] kartoonjoy
+Pinned a message.
+
+
+[09/01/2022 11:11 PM] CRYP70#8985
+👋👋
+
+
+[09/02/2022 11:21 AM] Junnon#3182
+9 days :thisisfine:
+
+
+[09/02/2022 11:27 AM] codingnamekiki
+even better 😈
+
+
+[09/02/2022 11:44 AM] Junnon#3182
+its time to explore more than i++ gas optimization lol
+
+{Reactions}
+👆 (7) 
+
+[09/02/2022 11:45 AM] codingnamekiki
+Nah i++ is hard enough, no need to push myself more than that
+
+{Reactions}
+laugh (5) 
+
+[09/02/2022 9:52 PM] haruxe
+```py
+unchecked{
+++i
+}
+```
+
+{Reactions}
+❤️ (5) 💯 (5) 
+
+[09/02/2022 9:52 PM] haruxe
+:kekwboom:
+
+{Reactions}
+😱 (4) 
+
+[09/03/2022 11:24 AM] 0xa5df
+Hi
+I haven't participated in #deleted-channel contest, how relevant is the code presented in that contest to this contest?
+
+{Reactions}
+☝️ (15) 
+
+[09/06/2022 6:16 PM] kulkarohan
+hey! definitely recommend checking out the Nouns contracts. they've heavily influenced the ones for this contest
+
+
+[09/06/2022 8:02 PM] Franfran#5067
+Hey what's up frens
+
+
+[09/06/2022 8:37 PM] ljmanini
+glhf all
+
+
+[09/06/2022 8:45 PM] ladboy233
+well implemented.
+
+
+[09/06/2022 8:46 PM] ladboy233
+no i++
+
+
+[09/06/2022 8:46 PM] ladboy233
+can't buy a slice of pizza.
+
+{Reactions}
+😂 (11) 
+
+[09/06/2022 8:46 PM] ladboy233
+sadly.
+
+
+[09/06/2022 9:36 PM] ladboy233
+too much alpha.
+
+
+[09/06/2022 9:37 PM] ladboy233
+please delete. now I can't buy two slices of pizza.
+
+
+[09/06/2022 9:37 PM] ladboy233
+haha
+
+
+[09/06/2022 9:37 PM] christian_kuri
+lol
+
+
+[09/06/2022 9:38 PM] christian_kuri
+Guys is there a way to hover over a function and see the comments? just wondering 😄 (VSCode)
+
+
+[09/06/2022 9:39 PM] 0xpathfindr
+Has anyone been able to run slither over the project yet?
+
+
+[09/06/2022 9:52 PM] medikko#3448
+Haha 😁
+
+
+[09/06/2022 10:28 PM] b353n
+I can't
+
+
+[09/06/2022 10:32 PM] tofunmi
+grep -n "++i" *
+
+{Reactions}
+🗿 
+
+[09/06/2022 10:45 PM] dravee
+You need to use exactly solc 0.8.15 (not the latest 0.8.16) and unfortunately not use `slither .` but more like `slither src/auction/` (paths are not resolving correctly)
+
+{Reactions}
+🔥 
+
+[09/06/2022 11:02 PM] Junnon#3182
+Sad
+
+{Reactions}
+👍 (7) 💯 (2) 😿 (2) 
+
+[09/07/2022 2:00 AM] wiasliaw
+Is there any sample deployment script?
+
+{Reactions}
+❤️ 
+
+[09/07/2022 5:33 AM] devabdee
+who wrote these contracts?
+
+
+[09/07/2022 5:33 AM] devabdee
+No `require`, No `i++` !!!!!!??????
+
+
+[09/07/2022 5:33 AM] devabdee
+What I'm gonna eat now
+
+{Reactions}
+🥦 (8) ohno (2) 😂 (14) 
+
+[09/07/2022 5:34 AM] codingnamekiki
+Great job to the one, who wrote them. Now l can focus on the bigger stuff :thankyou:
+
+{Reactions}
+🔥 (7) 🥩 (6) 
+
+[09/07/2022 7:12 AM] 0xpathfindr
+Thank you
+
+
+[09/07/2022 10:27 AM] p_crypt0
+What's up with the ```require``` statements?
+
+
+[09/07/2022 10:27 AM] p_crypt0
+Gas inefficient in comparison to?
+
+
+[09/07/2022 11:23 AM] 0x1f8b
+Please don't spam the contest thread with something that it's well written, if you have a question about i++ or if require is better than custom errors use #❓questions or #🌳everything-evm  threads
+
+{Reactions}
+👍 (8) ✅ (2) 
+
+[09/07/2022 3:29 PM] Franfran#5067
+custom errors because usually they require strings which are dynamic (probably)
+
+
+[09/07/2022 3:29 PM] Franfran#5067
+I mean they don't require a string but usually they use a string yea
+
+{Reactions}
+👍 
+
+[09/07/2022 4:26 PM] christian_kuri
+Does it have any benefit by submitting early than later? I mean I have found some issues, but I want to send them all at the same time
+
+
+[09/07/2022 4:35 PM] minh___
+no benefits at all
+
+{Reactions}
+👍 
+
+[09/07/2022 4:54 PM] thepicodes
+Actually most wardens submit everything near the end of the contest
+
+{Reactions}
+C4Keycap (10) ohno (3) 💯 (2) 
+
+[09/07/2022 7:02 PM] kamensec
+@rohan, @tbtstl or @iain I have some questions about the contracts. I was hoping to reach out privately are one of you available ? (looks like kulk is on DND). Mainly need help surrounding some issue verification assistance.
+
+
+[09/07/2022 7:02 PM] kartoonjoy
+just dont cut too close to the contest closes. Once the contest is done, we are unable to accept submissions.
+
+{Reactions}
+💯 (2) 
+
+[09/07/2022 7:03 PM] kulkarohan
+feel free to DM me!
+
+
+[09/07/2022 7:11 PM] kamensec
+perfect thanks @rohan
+
+
+[09/07/2022 10:49 PM] christian_kuri
+@rohan , @tbtstl, @iain  can I dm any of you?
+
+
+[09/07/2022 10:49 PM] tbtstl
+for sure!
+
+
+[09/07/2022 10:50 PM] christian_kuri
+I cant
+
+
+[09/07/2022 10:50 PM] tbtstl
+try adding me as a friend first
+
+
+[09/08/2022 12:27 PM] mtripi
+Hello @rohan  , @tbtstl , @iain. I need some support for a potencial issue. can I dm someone of you? Thanks
+
+
+[09/08/2022 1:42 PM] tbtstl
+hey @Migue , feel free to dm any of us. you’ll just have to add us as friends first
+
+{Reactions}
+thankyou 
+
+[09/08/2022 2:27 PM] kamensec
+hey what timezone are you guys on? I just messaged kulk but wondering if there is someone else to message
+
+
+[09/08/2022 4:12 PM] tbtstl
+we’re mainly EST but @rohan is a night owl
+
+
+[09/08/2022 4:12 PM] tbtstl
+feel free to hit me up @kamensec
+
+
+[09/08/2022 4:23 PM] kamensec
+sick ok I'll message you now and if you can just let kulk know I doubled up on the msg
+
+
+[09/08/2022 4:25 PM] kamensec
+needed to add you it wouldn't let me send a direct
+
+
+[09/08/2022 4:38 PM] tbtstl
+added @kamensec
+
+
+[09/08/2022 7:08 PM] tbtstl
+Beta website is up on rinkeby if anyone wants to play with the UI as well! (not part of the audit)
+
+https://nouns.build
+
+{Reactions}
+👍 
+
+[09/08/2022 7:53 PM] wiasliaw
+Sry for unclear question.
+I had ask for audit company when I submitted for audit, if they can audit the deployment script and setup. They said yes.
+Is that verifying deployment out of scope?
+
+
+[09/08/2022 7:54 PM] b353n
+i really try but i can't understand you dude
+
+
+[09/09/2022 3:42 AM] _oceansky
+Hello Folks!, newbie here,  happy to participate in this contest, hope i can find some little finding in gas savings. Goodluck to all of us! 😎  Can you give some tip for gas savings findings? Any support is appreciated.🙏🏻 thank you!
+
+
+[09/09/2022 6:14 AM] hake_stake
+@tbtstl sent friend request
+
+{Reactions}
+☑️ 
+
+[09/09/2022 7:10 AM] matin6517
+Hello dear friends
+It could be ridiculous though, but the "forge install" is not being executed in my terminal
+Could you please help me to solve this?
+
+
+[09/09/2022 7:16 AM] matin6517
+Another question is if I want to run the whole project inside Remix, which is the very base contract for that?
+
+
+[09/09/2022 8:20 AM] rvierdiiev
+and have you already installed it?
+https://book.getfoundry.sh/getting-started/installation
+
+
+[09/09/2022 10:21 AM] illilli000
+I'm seeing `forge install` hang for a long time too today, but it eventually goes through
+
+{Reactions}
+👀 (2) 
+
+[09/09/2022 11:53 AM] b353n
+On this script will be hard to find gas savings , its very well optimised already
+
+{Reactions}
+thisisfine 
+
+[09/09/2022 1:22 PM] _oceansky
+Hmm..It seems I'm already too late in the gas optim era party, projects are already making adjustments. Better to focus on the next level. 💪🏻
+
+{Reactions}
+👍 (2) 
+
+[09/09/2022 2:38 PM] matin6517
+Oh that's related to Foundry
+It's somehow confusing as there are lots of Ethereum-related apps
+Thanks a lot dear friend🙏
+
+
+[09/11/2022 12:56 AM] karmacoma
+mrw reading the nouns builder contracts
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2022 - nouns-builder-sept6 [1014987087478526052].txt_Files/unknown-C52D7.png
+
+{Reactions}
+😂 (17) hearteyesrobot 
+
+[09/12/2022 7:01 PM] acegawd
+@rohan DM
+
+
+[09/12/2022 8:22 PM] tbtstl
+@0xmint kulk is out rn, feel free to DM @iain or myself
+
+{Reactions}
+👍 (2) 
+
+[09/12/2022 8:27 PM] acegawd
+Sending you a friend request now.
+
+
+[09/12/2022 9:05 PM] dlock#3638
+You can use remixd cli to open the project from your filesystem on remix
+
+
+[09/13/2022 3:17 PM] zachobront
+@tbtstl Adding you as friend to DM you a question
+
+
+[09/13/2022 3:40 PM] Azephiar#2778
+@tbtstl dm
+
+
+[09/13/2022 3:59 PM] zachobront
+Is the expectation that you will deploy the implementations and users will just use the Manager to go through the proxy deployment flow? Or are you imagining that users will fork the whole thing and deploy the implementations on their own?
+
+{Reactions}
+chefskiss 
+
+[09/13/2022 4:49 PM] tbtstl
+The former, we'll deploy the implementation so users just need to deploy the proxies
+
+
+[09/14/2022 9:33 AM] un_for_given
+@tbtstl  DM
+
+
+[09/14/2022 12:52 PM] .respx
+@tbtstl @iain I DM-ed you both the same question (if one of you answers, I will notify the other DM so as not to waste time).
+
+
+[09/14/2022 1:45 PM] codingnamekiki
+spent too many hours on this project, if someone wakes me up at the night and asks me, where a certain function belongs, l would probably know the answer. 😭
+
+{Reactions}
+😂 (9) 🔥 (6) 💪 (3) 
+
+[09/14/2022 3:50 PM] Azephiar#2778
+This was my first audit, my brain is melted
+
+{Reactions}
+hi5 (3) 🫂 (2) 
+
+[09/15/2022 12:07 AM] _oceansky
+same here bro, newbies like me, will find hard to digest the codes but i guess this is the best practice and training to hone our skills in smart contract auditing.  Just go there in the wild and give all your efforts whatever it takes.
+
+{Reactions}
+💯 (2) 👏 (2) 
+
+[09/15/2022 10:50 AM] 0xsorrynotsorry
+any sponsors available to DM? @rohan, @tbtstl and @iain,
+
+
+[09/15/2022 11:11 AM] slightscan
+In finding Solidity symbols you would then be more useful than vscode haha. I always have to manually search things, cmd click is not working.
+
+
+[09/15/2022 11:39 AM] Franfran#5067
+They need to figure out remappings
+
+
+[09/15/2022 4:24 PM] kamensec
+Hi team, can someone let me know if anyone is available ? @rohan @tbtstl and @iain
+
+
+[09/15/2022 4:33 PM] acegawd
+Dm @rohan  or @iain
+
+
+[09/15/2022 4:58 PM] kulkarohan
+feel free to send DMs my way. i'll get back to each as soon as i can
+
+
+[09/15/2022 5:08 PM] codingnamekiki
+can l send a friend request 👉👈
+
+
+[09/15/2022 5:56 PM] rohan16
+Is their any sponsor on today
+
+
+[09/15/2022 5:56 PM] rohan16
+right now
+
+
+[09/15/2022 5:56 PM] rohan16
+I got a flaw to discuss
+
+
+[09/15/2022 6:13 PM] m9800
+☝️
+
+
+[09/15/2022 7:39 PM] tofunmi
+If you got any paid high in this one,  You deserve to be worshipped 🥲 🥲
+
+{Reactions}
+💯 (4) 
+
+[09/15/2022 7:40 PM] codingnamekiki
+my time to shine 🔆
+
+
+[09/15/2022 7:40 PM] tofunmi
+😩
+
+
+[09/15/2022 7:41 PM] tofunmi
+I can recite all function off hand 🥲 🥲
+
+
+[09/15/2022 7:41 PM] codingnamekiki
+it's still hard to believe that the number of my high risks is greater than the number of my gas optimizations.
+
+{Reactions}
+peepoeyes (10) 
+
+[09/15/2022 8:02 PM] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens The **Nouns Builder** contest is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: the **Zora** team will review the findings over the next couple of days, and then we'll pass them off to the judge. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a gardener if you have questions along the way!
+
+{Reactions}
+🤑 (13) ✅ (9) 🔥 (11) C4Keycap (7) peepoeyes (5) 
+
+[09/16/2022 8:01 AM] Azephiar#2778
+I'm honestly hyped to see what the wardens have found in this contract
+
+{Reactions}
+🤞 (3) 
+
+[09/16/2022 8:17 AM] tofunmi
+Super hyped
+
+
+[09/16/2022 8:48 AM] Azephiar#2778
+i think i choose the wrong contract to do my first audit on lmao
+
+{Reactions}
+👍 (3) 
+
+[09/16/2022 9:02 AM] codingnamekiki
+if you were looking for gas optimizations for the first time, these contracts were already really well optimized. >.>
+
+
+[09/16/2022 9:33 AM] Azephiar#2778
+That's what I did for the first 4 days of the contest, then I switched to logic bugs
+
+
+[09/16/2022 10:34 AM] davidbrai
+how long does it usually take until results are published?
+
+
+[09/16/2022 11:07 AM] Azephiar#2778
+From a table I saw on the docs a couple of months
+
+
+[09/16/2022 8:52 PM] Franfran#5067
+even logic was pretty well handled tbh
+
+{Reactions}
+👍 
+
+[09/16/2022 9:12 PM] codingnamekiki
+Everything was well optimized, this project is one of my favourite so far.
+
+{Reactions}
+__ (2) 
+
+[09/16/2022 11:48 PM] 3asyp3asy
+This was my first audit for me as well and I found some thing but nothing serious, it seemed way harder than the reports I have read and reading you others tell that this project was tough makes me feel less of a total noob 😄 so ty 😄
+
+{Reactions}
+Clap (5) 
+
+[09/17/2022 12:15 AM] alextheentreprenerd
+Is there a list of Target Deployment Chains?
+Mostly to check WETH return as WETH never returns false on mainnet
+
+
+[09/17/2022 12:36 AM] Franfran#5067
+Because if we would check for that and revert the Auction could be DOS
+
+
+[09/17/2022 12:36 AM] Franfran#5067
+At least in my understanding
+
+
+[09/17/2022 12:36 AM] Franfran#5067
+That's the point of the WETH fallback (may-b?)
+
+
+[09/17/2022 12:53 AM] alextheentreprenerd
+Started a thread.
+
+
+[09/25/2022 8:55 PM] alextheentreprenerd
+I want to commend the submissions for this contest. While there is still room for improvement, I think the average submission is way better than usual.
+
+Tons of POC, well-reasoned reports.
+
+Gj, everyone!
+
+:Clap:
+
+{Reactions}
+👍 (24) hi5 (11) 🎉 (3) clapping (4) 
+
+[09/26/2022 7:38 AM] Azephiar#2778
+i think part of the reason is forge makes it way easier to write POC
+
+{Reactions}
+same (2) 
+
+[09/26/2022 2:19 PM] mtripi
+Totally agree!!!
+
+
+[09/28/2022 2:40 PM] Waze#6964
+Hi there, i got some problem here. My submission gone from repo c4
+
+
+[09/28/2022 2:42 PM] itsmetechjay
+Want to send me a DM?
+
+
+[10/05/2022 2:58 AM] ladboy233
+How is the judging going? Hope it going well!
+
+
+[10/05/2022 12:39 PM] alextheentreprenerd
+Asked to send to Triage so just a few more days
+
+{Reactions}
+❤️ (3) 👆 
+
+[10/05/2022 2:24 PM] ladboy233
+Ok Thanks!
+
+
+[10/12/2022 8:49 AM] R2#8087
+Hi guys! When results and awards will be announced?
+Very interesting if my "HIGH" is accepted
+
+
+[10/12/2022 11:59 AM] davidbrai
+also curious!
+
+
+[10/12/2022 12:36 PM] alextheentreprenerd
+I will give a final look today, went through all steps so just give it a few more days for Math and payout
+
+{Reactions}
+❤️ (8) ☝️ (2) 
+
+[10/14/2022 4:11 AM] ladboy233
+https://github.com/code-423n4/code423n4.com/pull/4390/files
+
+{Embed}
+https://github.com/code-423n4/code423n4.com/pull/4390/files
+Add Nouns Builder to Leaderboard by liveactionllama · Pull Request ...
+Code4rena - ARCHIVE-Q3-2022 - nouns-builder-sept6 [1014987087478526052].txt_Files/98446738-1A1F9
+
+{Reactions}
+👍 (7) 8374_Telegram 
+
+[10/14/2022 4:11 AM] ladboy233
+here we go.
+
+
+[10/14/2022 4:11 AM] ladboy233
+Yeah I watched the code4rena github repo PR for this lol
+
+{Reactions}
+❤️ (6) C4Keycap (3) 4739_Skeletor (3) 
+
+[10/14/2022 2:58 PM] itsmetechjay
+🤑 🎉 Awards for **Nouns Builder / Zora**:
+
+$12,228.03 USDC » @hyh 
+$4,647.18 USDC » @rvierdiiev 
+$4,271.58 USDC » @Chom 
+$3,703.17 USDC » @scaraven 
+$3,487.43 USDC » @Jeiwan 
+$3,192.86 USDC » PwnPatrol (@obront, @Throttle)
+$3,160.54 USDC » @davidbrai 
+$2,898.65 USDC » @0xA5DF 
+$2,858.26 USDC » @Tomo | NinjAudit 
+$2,845.02 USDC » @Migue 
+$2,818.40 USDC » V_B (@Barichek, @Vlad B | zkSync)
+$2,759.01 USDC » @Ch_301 
+$2,454.12 USDC » @rbserver 
+$1,905.70 USDC » @Roman 
+$1,877.65 USDC » @Soosh 
+$1,389.74 USDC » CertoraInc (@egjlmn1, @Ori Dabush, @shakedwinder, @RoiEvenHaim, @ItayG)
+$1,375.24 USDC » @Picodes | Angle 
+$1,216.32 USDC » @arcoun 
+$1,208.13 USDC » @solimander 
+$1,187.48 USDC » @Thunder 
+$1,077.28 USDC » @Bernd 
+$962.08 USDC » @ayeslick 
+$919.27 USDC » @R2
+$876.33 USDC » @bin2chen 
+$854.36 USDC » @pfapostol 
+$802.03 USDC » @cccz 
+$790.61 USDC » @csanuragjain 
+$789.00 USDC » @m9800 
+$768.01 USDC » @__141345__ 
+$660.32 USDC » @MiloTruck 
+$651.06 USDC » @MEP
+$616.11 USDC » @izhuer 
+$602.46 USDC » @ladboy233小伙子 
+$599.05 USDC » @imare
+$579.85 USDC » zkhorse (@karmacoma, @horsefacts)
+$531.99 USDC » @pashov 
+$489.18 USDC » @0xSmartContract 
+$486.69 USDC » @zhuXKET 
+$464.52 USDC » @pcarranzav 
+$445.45 USDC » @sorryNotsorry 
+$432.00 USDC » @0x52 
+$417.66 USDC » @anon 
+$402.55 USDC » @Deivitto 
+$361.81 USDC » @dipp 
+$357.27 USDC » @Azephiar 
+$349.06 USDC » @hxzy 
+$327.51 USDC » @code-cipher 
+$291.22 USDC » @volky 
+$273.40 USDC » @Tointer 
+$271.16 USDC » @cryptphi 
+$266.01 USDC » @joestakey 
+$247.94 USDC » @simon135 
+$235.61 USDC » @Rotcivegaf 
+$235.61 USDC » @saian 
+$235.61 USDC » @kamensec 
+$235.47 USDC » @zzzitron 
+$223.21 USDC » @indijanc 
+$222.38 USDC » @pedr02b2 
+$222.38 USDC » @yixxas 
+$207.55 USDC » @TomJ 
+$205.93 USDC » @datapunk 
+$188.57 USDC » @elad ⌐◨-◨ 
+$176.87 USDC » @fatherOfBlocks 
+$165.49 USDC » GimelSec (@rayn | GimelSec, @sces60107 | GimelSec)
+$162.01 USDC » @hansfriese 
+$150.50 USDC » @_Adam 
+$142.37 USDC » @0x1f8b 
+$140.97 USDC » @0xc0ffEE 
+$136.39 USDC » @CodingNameKiki 
+$132.81 USDC » @c3phas 
+$131.46 USDC » @ak1 
+$121.61 USDC » @Christian Kuri 
+$118.16 USDC » @brgltd
+$116.00 USDC » @gogo
+$115.47 USDC » @slightscan
+$115.46 USDC » @peritoflores
+$110.47 USDC » @ReyAdmirado
+$109.85 USDC » @ElKu
+$108.87 USDC » @Rolezn
+$107.81 USDC » @leosathya
+$107.47 USDC » @thinklab 
+$107.23 USDC » @RaymondFam
+$107.03 USDC » @djxploit
+$106.40 USDC » @Waze
+$106.39 USDC » @martin11
+$106.23 USDC » @robee 
+$106.21 USDC » @Respx
+$106.21 USDC » @Sloth 
+$106.20 USDC » @Bnke
+$106.20 USDC » @ch0bu
+$106.20 USDC » @PPrieditis
+$106.20 USDC » @bulej93
+$106.20 USDC » @ret2basic.eth
+
+{Reactions}
+❤️ (5) 
+
+[10/14/2022 2:58 PM] itsmetechjay
+$106.20 USDC » @ballx
+$106.19 USDC » @lucacez 
+$106.19 USDC » @sikorico 
+$106.19 USDC » @Samatak 
+$106.19 USDC » @Franfran 
+$106.19 USDC » @PaludoX0 
+$106.19 USDC » @dharma09
+$100.11 USDC » @wagmi 
+$95.56 USDC » @eierina 
+$90.77 USDC » @0xNazgul 
+$77.96 USDC » @LéoS 
+$70.68 USDC » @hatch 
+$66.39 USDC » @d3e4 
+$66.39 USDC » @neumo 
+$66.39 USDC » @minhtrng 
+$62.78 USDC » @0x1337 
+$61.24 USDC » @B2
+$60.78 USDC » @EricTee 
+$60.78 USDC » @ne0n 
+$60.78 USDC » @8olidity 
+$60.77 USDC » @jonatascm 
+$60.77 USDC » @0x85102 
+$60.77 USDC » @Sahar 
+$60.77 USDC » @TuckSparrow 
+$60.77 USDC » @lukris02 
+$60.77 USDC » @cryptostellar5 
+$60.77 USDC » @++Jujic#5558 
+$60.77 USDC » @sach1r0 
+$60.77 USDC » @bharg4v 
+$60.77 USDC » @Captainkay 
+$60.77 USDC » @cryptonue 
+$60.77 USDC » @Jancem 
+$60.77 USDC » @slowmoses
+$60.77 USDC » @tnevler 
+$60.77 USDC » @bobirichman7542 
+$60.77 USDC » @cloudjunky 
+$60.77 USDC » @Diana 
+$60.77 USDC » @Funen 
+$60.77 USDC » @0xbepresent 
+$60.77 USDC » @a12jmx 
+$60.77 USDC » @delfin454000 
+$60.77 USDC » @DimitarDimitrov 
+$60.77 USDC » @MasterCookie 
+$60.77 USDC » @Noah3o6 
+$60.77 USDC » @p_crypt0 
+$60.77 USDC » @CRYP70 
+$60.77 USDC » @dic0de 
+$60.77 USDC » Lead_Belly
+$60.77 USDC » @Randyyy 
+$59.64 USDC » @SnowMan 
+$54.69 USDC » @antonttc 
+$51.03 USDC » @easy peasy 
+$49.69 USDC » @Saintcode_ 
+$49.69 USDC » JAGADESH
+$49.08 USDC » @immeas 
+$46.69 USDC » @DimSon 
+$46.69 USDC » @WatchDogs 
+$46.69 USDC » @rfa
+$45.62 USDC » @JC
+$45.62 USDC » @Matin
+$45.47 USDC » @Tofunmi 
+$45.42 USDC » @gianganhnguyen 
+$45.41 USDC » @Prasant Gupta 
+$45.41 USDC » @StevenL 
+$45.41 USDC » @durianSausage 
+$45.41 USDC » @Cr4ckM3 
+$45.41 USDC » @Metatron 
+$45.41 USDC » @0xkatana 
+$45.41 USDC » @chandr 
+$45.41 USDC » @zishansami 
+$45.41 USDC » @0x5rings 
+$45.41 USDC » @peiw 
+$45.41 USDC » @ajtra 
+$5.61 USDC » @teawaterwire 
+$5.61 USDC » @unforgiven 
+
+🏁 Findings summary
+---------------------------
+High risk findings: 39 total, 5 unique
+Med risk findings: 169 total, 28 unique
+Gas optimization reports: 75
+QA reports: 124
+
+Awards will be distributed on Polygon within the next 1-2 weeks. Congratulations all! 💸 💸 💸
+
+*Note: If you participated in this contest and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+C4Keycap (19) 🔥 (13) 💸 (8) 🎉 (8) goose (4) yay (4) cyberheart (3) ✅ (4) ❤️ (2) 
+
+[10/14/2022 3:38 PM] alextheentreprenerd
+Really impressed by the quality of submissions for this contest, a lot of POCs and detailed examples
+
+{Reactions}
+❤️ (16) catvibe (4) 
+
+[10/14/2022 3:56 PM] a12jmx
+Kudos to you to for bringing this to the table in exactly 29 days! That must definitely be a record in recent times 💪
+
+{Reactions}
+🙏 (3) 💯 (5) 
+
+[10/14/2022 4:22 PM] mtripi
+This is the first contest which I spent time seriously... I really learned a lot in this contest and get paid also. Nothing else to say than thanks for Code4rena and Sponsor for the opportunity
+
+{Reactions}
+🎉 (7) hi5 (5) 
+
+[10/14/2022 4:27 PM] pedr02b2
+Thank you so much code4arena and thank you for the opportunity to work on your project nouns builder
+
+{Reactions}
+hi5 (4) 🎉 (4) 
+
+[10/14/2022 4:28 PM] codingnamekiki
+:wha:
+
+
+[10/14/2022 4:53 PM] teawaterwire
+when will the report be published? really curious to see what the others got (and to learn, and to improve -- pretty humiliating to be last 😂 😭 )
+
+
+[10/23/2022 4:37 AM] b2_1337
+I haven't received the awards for this contest. Whom should I contact ?
+
+
+[10/23/2022 5:06 AM] yongkiws
+1-2 weeks
+
+
+[10/23/2022 5:23 AM] bulej93
+these awards were sent. check your wallet for USDC @B2
+
+
+[10/23/2022 6:01 AM] b2_1337
+I haven't received the rewards, I checked for USDC also. That's why I want to know if anyone from the team can help me out@bulej93
+
+
+[10/23/2022 6:03 AM] bulej93
+check dm
+
+
+[10/23/2022 6:05 AM] b2_1337
+Ok
+
+
+[10/23/2022 6:31 AM] anonnp
+Switch network in MetaMask to Polygon
+
+
+[10/23/2022 6:35 PM] Cap-k#1576
+i didnt recieve any either, could u help @bulej93
+
+
+[10/23/2022 6:35 PM] bulej93
+dm your address
+
+
+[10/23/2022 6:37 PM] Cap-k#1576
+done
+
+
+[10/23/2022 6:58 PM] matin6517
+I received it but got hacked!
+
+
+[10/26/2022 4:08 AM] leosathya#5569
+Hii i didn't receive any reward, could you please help me @bulej93
+
+
+[10/26/2022 4:08 AM] leosathya#5569
+Or anyone
+
+
+[10/26/2022 5:38 AM] bulej93
+send me your address
+
+
+[10/26/2022 5:51 AM] leosathya#5569
+sent
+
+
+[11/30/2022 11:08 AM] cloudellie
+Please submit a Help Desk request: https://code4rena.com/help and we can look into it.
+
+{Embed}
+https://code4rena.com/help
+Help | Code 423n4
+Need help with something? Contact us here.
+Code4rena - ARCHIVE-Q3-2022 - nouns-builder-sept6 [1014987087478526052].txt_Files/C4-banner-7C19B.png
+
+
+[12/01/2022 4:40 AM] leosathya#5569
+This was already sorted, thanks for @bulej93 help
+
+{Reactions}
+👍 (2) 💯 
+
+==============================================================
+Exported 158 message(s)
+==============================================================
